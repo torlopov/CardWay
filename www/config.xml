@@ -7,13 +7,13 @@
     <author email="i.torlopov@mail.ru" href="http://cardway.ru">
         CardWay
     </author>
-	<!--gap:plugin name="org.apache.cordova.geolocation" version="0.3.10"/>
+	<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10"/>
 	<gap:plugin name="org.apache.cordova.dialogs" version="0.2.10"/>
-	<gap:plugin name="org.apache.cordova.network-information" version="0.2.12"/-->
-	 <icon density="ldpi" platform="android" src="images/logo.png"/>
-<icon density="mdpi" platform="android" src="images/logo.png"/>
-<icon density="hdpi" platform="android" src="images/logo.png"/>
-<icon density="xhdpi" platform="android" src="images/logo.png"/>
+	<gap:plugin name="org.apache.cordova.network-information" version="0.2.12"/>
+	<icon density="ldpi" platform="android" src="img/logo.png"/>
+	<icon density="mdpi" platform="android" src="img/logo.png"/>
+	<icon density="hdpi" platform="android" src="img/logo.png"/>
+	<icon density="xhdpi" platform="android" src="img/logo.png"/>
     <content src="index.html"/>
     <access origin="*"/>
     <preference name="orientation" value="portrait"/>
