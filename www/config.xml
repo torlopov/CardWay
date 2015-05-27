@@ -7,7 +7,7 @@
     <author email="i.torlopov@mail.ru" href="http://cardway.ru">
         CardWay
     </author>
-	<gap:plugin name="com.yongsun.cordova.geolocation" version="0.3.12" />
+	<gap:plugin name="com.yongsun.cordova.geolocation" />
 	
 	<icon density="ldpi" platform="android" src="img/logo.png"/>
 	<icon density="mdpi" platform="android" src="img/logo.png"/>
