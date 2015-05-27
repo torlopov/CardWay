@@ -1,0 +1,846 @@
+<!DOCTYPE html> 
+<!-- версия программы 8 -->
+<html id="html">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!--meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" /-->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		<!--link rel="stylesheet" type="text/css" media="only screen and (max-width:800px)" href="css/800.css" /-->
+        
+      
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery.maskedinput.js"> </script>
+		<script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+        <script type="text/javascript" src="js/BackgroundGeoLocation.js"></script>    
+		<script type="text/javascript" src="js/notification.js"></script>
+		<script type="text/javascript" src="js/network.js"></script>
+    <!-- СЛАЙДЕР -->
+        <script src="js/jquery.excoloSlider.min.js"></script>
+        <link href="css/jquery.excoloSlider.css" rel="stylesheet" />
+    <!-- КОНЕЦ СЛАЙДЕР -->
+        
+        <title>CardWay</title>
+ 
+    </head>
+
+    <body id="body">
+
+        <div id="wrapper">
+
+<!--------------- ШАПКА ------------------>
+                    <div class="header">
+                            <div class="logo">
+                                <div class="logo_img"></div> 
+                            </div>
+                            <div class="but_call_wrap">
+                                <div class="but_call_body">
+                                    <div class="but_call_body_img"></div>
+                                </div>
+                            </div>
+                    </div>
+<!--------------- КОНЕЦ - ШАПКА ------------------>
+
+<!--------------- ВЕРХНИЕ БАННЕРЫ ------------------>
+
+                    <div class="banner_str_reg all_banners">
+                            <div class="banner_img">
+                                    <span class="slogan css_font_size_12">ДО <span class="css_font_size_16">25%</span> СКИДКА<br>В <span class="css_font_size_16">300</span> РЕСТОРАНАХ</span>
+                            </div>
+                    </div>
+
+                    <div class="banner_str_moi_dannie all_banners">
+                            <div class="banner_img">
+                                    <span class="slogan css_font_size_12">МОИ ДАННЫЕ</span>
+                            </div>
+                    </div>
+
+                    <div class="banner_str_filtr all_banners">
+                            <div class="banner_img">
+                                    <span class="slogan css_font_size_12">ПОИСК ЗАВЕДЕНИЙ</br>ПО ПАРАМЕТРАМ</span>
+                            </div>
+                    </div>
+
+                    <div class="banner_str_izbrannoe all_banners">
+                            <div class="banner_img">
+                                    <span class="slogan css_font_size_12">ЗАВЕДЕНИЯ В ИБРАННОМ</span>
+                            </div>
+                    </div>
+
+                    <div class="banner_poisk_wr all_big_wr all_banners">
+                        <div class="all_medium_wr all_margin_center">
+                            <div class="pointer"></div>
+                            <div class="all_small_wr all_margin_center">
+                                <!--div class="css_font_size_18 div_input">ПОИСК ПО НАЗ...</div-->
+                                <input class="css_font_size_18 input_stop_click" placeholder="ПОИСК ПО НАЗВАНИЮ" value="" type="text" name="" readonly />
+                            </div>
+                        </div>
+                    </div>    
+
+                    <div class="banner_forma_broni_empty_wr all_big_wr all_banners">
+                        <div class="all_medium_wr all_margin_center">
+                            <div class="pointer"></div>
+                            <div class="all_small_wr all_margin_center">
+                                <input form="forma_broni" class="css_font_size_18 input_stop_click" placeholder="НАЗВАНИЕ РЕСТОРАНА" value="" type="text" name="resto_name" readonly />
+                            </div>
+                        </div>
+                    </div>    
+
+                    <!--div class="banner_forma_broni_full_wr all_big_wr all_banners">
+                        <div class="all_medium_wr all_margin_center">
+                            <div class="pointer"></div>
+                            <div class="all_small_wr all_margin_center">
+                                <input form="forma_broni" class="css_font_size_18" value="" type="text" name="resto_name" readonly />
+                            </div>
+                        </div>
+                    </div-->
+                    <div class="banner_zagolovok_moi_broni all_banners css_font_size_10">
+                        <div class="content_zagolovok_moi_broni">
+                            <div class="zagolovok_moi_broni_text">НАЗВАНИЕ<br>ЗАВЕДЕНИЯ</div>
+                            <div class="zagolovok_moi_broni_text moi_broni_text_status css_font_size_10">СТАТУС</div>
+                            <div class="zagolovok_moi_broni_text moi_broni_text_data_zayavki  css_font_size_10">ДАТА </br>ЗАЯВКИ</div>
+                            <div class="zagolovok_moi_broni_text moi_broni_text_data_vizita css_font_size_10">ДАТА </br>ВИЗИТА</div>
+                        </div>
+                    </div>
+
+
+<!--------------- КОНЕЦ - ВЕРХНИЕ БАННЕРЫ ------------------>
+
+
+<!--------------- СТРАНИЦА РАГИСТРАЦИИ ------------------>
+                    <div class="content_str_reg all_contents">
+                        
+                        <form class="forma_regist" action="http://test_to_app.zakazstolov24.ru/forma_registr_processing.php" method="post">
+                            
+                            <div class="reg_banck_wr all_big_wr">
+                                <div class="all_medium_wr all_margin_center">
+                                    <div class="pointer"></div>
+                                    <div class="all_small_wr all_margin_center">
+                                        <input class="css_font_size_16" name="bank_name" type="text" value="" placeholder="ВЫБЕРИТЕ ВАШ БАНК" readonly />
+                                    </div>
+                                </div>
+                            </div>    
+
+                            <div class="reg_card_wr all_big_wr">
+                                <div class="all_medium_wr all_margin_center">
+                                    <div class="pointer"></div>
+                                    <div class="all_small_wr all_margin_center">
+                                        <!--input class="css_font_size_16" name="card_num" type="text" maxlength="6" value="" placeholder="ПЕРВЫЕ 6 ЦИФР КАРТЫ" onfocus="(this.type='number')" onblur="(this.type='text')" /-->
+                                        <input class="css_font_size_16 input_stop_click" name="card_num" type="text" value="" placeholder="ПЕРВЫЕ 6 ЦИФР КАРТЫ" readonly />
+                                        <!--script>
+                                            $(".reg_card_wr input").mask("9999 - 99 XX - XXXX - XXXX", {placeholder:"_"});
+                                        </script-->
+                                    </div>
+                                </div>
+                            </div>    
+                            
+                            <div class="reg_fio_wr all_big_wr">
+                                <div class="all_medium_wr all_margin_center">
+                                    <div class="pointer"></div>
+                                    <div class="all_small_wr all_margin_center">
+                                        <input class="css_font_size_16 input_stop_click" type="text" name="user_fio" value="" placeholder="ВАШЕ ФИО" readonly />
+                                    </div>
+                                </div>
+                            </div>    
+
+                            <div class="reg_phone_wr all_big_wr">
+                                <div class="all_medium_wr all_margin_center">
+                                    <div class="pointer"></div>
+                                    <div class="all_small_wr all_margin_center">
+                                        <input class="css_font_size_16 input_stop_click" type="text" name="phone_num" value="" placeholder="НОМЕР ТЕЛЕФОНА" maxlength="11" readonly />
+                                        <!--script>
+                                            $(".reg_phone_wr input").mask("8 (999) 999-99-99", {placeholder:"_"});
+                                        </script-->
+                                    </div>
+                                </div>
+                            </div>    
+
+                            <div class="reg_submit_wr all_but_big_wr">
+                                <div class="all_but_medium_wr all_margin_center">
+                                    <input class="css_font_size_16 all_margin_center" type="text" value="ПОДКЛЮЧИТЬ КАРТУ" readonly />
+                                </div>
+                            </div>    
+
+                            <!--input id="submit_reg" class="all_skritiy_input_submit" type="text"-->
+                            
+                        </form>
+                    </div>
+<!--------------- КОНЕЦ - СТРАНИЦА РАГИСТРАЦИИ ------------------>
+
+
+<!--------------- СТРАНИЦА ВСЕ РЕСТОРАНЫ ------------------>
+                    <div class="content_vse_restorani all_contents">
+
+                                        <div class="restoran_wr">
+                                            <div class="restoran_block all_margin_center">
+                                                    <div class="restoran_content">
+                                                            <div class="all_restoran_id">
+                                                                    +id+
+                                                            </div>
+                                                            <div class="all_restoran_map_cords">
+                                                                    
+                                                            </div>
+                                                            <div class="restoran_name css_font_size_12 all_restoran_info">
+                                                                    <span class="css_font_size_16">+name+</span>
+                                                            </div>
+                                                            <div class="all_restoran_rating all_restoran_info "></div>
+                                                            <div class="restoran_metro css_font_size_12 all_restoran_info">
+                                                                    Метро: <span class="css_font_size_14">'+metro+'</span>
+                                                            </div>
+                                                            <div class="restoran_chek css_font_size_12 all_restoran_info">
+                                                                    Средний чек: <span class="css_font_size_14">'+check+' руб.</span>
+                                                            </div>
+                                                            <div class="restoran_osobennosti css_font_size_12 all_restoran_info"  style="display:none">
+                                                                    '+r_osob+'
+                                                            </div>
+                                                            <div class="restoran_kitch css_font_size_12 all_restoran_info" style="display:none">
+                                                                    '+r_kitch+'
+                                                            </div>
+                                                    </div>
+                                            </div>
+                                    </div>
+                    </div>
+<!--------------- КОНЕЦ - СТРАНИЦА ВСЕ РЕСТОРАНЫ ------------------>
+
+
+<!--------------- СТРАНИЦА РЕСТОРАНА --------------------->
+
+
+                    <div class="banner_buts_str_restorana_wr all_big_wr all_banners">
+                        
+                        <div class="restoran_page_map_cords"></div>
+						<div class="restoran_page_id"></div>
+                        
+                        <div class="but_izbrannoe_str_rest_wr all_but_big_wr">
+                            <div class="all_but_medium_wr all_margin_center">
+                                <input class="css_font_size_12 all_margin_center" type="text" value="В ИЗБРАННОЕ" readonly />
+                            </div>
+                        </div> 
+                        
+                        <div class="but_map_str_rest_wr all_but_big_wr">
+                            <div class="all_but_medium_wr all_margin_center">
+                                <input class="css_font_size_12 all_margin_center" type="text" value="НА КАРТЕ" readonly />
+                            </div>
+                        </div>    
+                                    
+                        <div class="block_foto_restorana">
+                            <div id="sliderA" class="slider"></div>
+                            <div class="foto_restorana_shadow"></div>
+                        </div> 
+                    </div>
+
+                    <div class="content_str_restorana all_contents css_font_size_18">
+                        
+                            <div class="about_resto_name">НАЗВАНИЕ РЕСТОРАНА</div>
+
+                            <div class="but_zabronirovat_str_rest_wr all_but_big_wr">
+                                <div class="all_but_medium_wr all_margin_center">
+                                    <input class="css_font_size_12 all_margin_center" type="text" value="ЗАБРОНИРОВАТЬ" readonly />
+                                </div>
+                            </div>    
+                        
+                            <div class="str_rest_info_block css_font_size_14">
+                                
+                                <div class="about_resto_sale all_resto_info_block">
+                                        <div class="all_resto_info_block_img"></div>
+                                        <div class="all_resto_info_block_text">СКИДКА</div>
+                                </div>
+                                
+                                <div class="about_resto_metro all_resto_info_block">
+                                        <div class="all_resto_info_block_img"></div>
+                                        <div class="all_resto_info_block_text">МЕТРО</div>
+                                </div>
+
+                                <div class="about_resto_adres all_resto_info_block">
+                                        <div class="all_resto_info_block_img"></div>
+                                        <div class="all_resto_info_block_text">АДРЕС</div>
+                                </div>
+
+                                <div class="about_resto_chek all_resto_info_block">
+                                        <div class="all_resto_info_block_img"></div>
+                                        <div class="all_resto_info_block_text">СРЕДНИЙ ЧЕК</div>
+                                </div>
+
+                                <div class="about_resto_vremya all_resto_info_block">
+                                        <div class="all_resto_info_block_img"></div>
+                                        <div class="all_resto_info_block_text">ВРЕМЯ РАБОТЫ</div>
+                                </div>
+
+                                <div class="about_resto_kitchen all_resto_info_block">
+                                        <div class="all_resto_info_block_img"></div>
+                                        <div class="all_resto_info_block_text">ТИП КУХНИ</div>
+                                </div>
+                                                            
+                                <div class="but_eshe_str_rest_wr all_resto_info_block">
+                                        <a href="#" style="text-decoration: initial">
+                                                <input class="css_font_size_14 all_margin_center" type="text" value="Показать больше..." readonly />
+                                        </a>
+                                </div> 
+                            </div>
+                            
+                            <div class="str_rest_info_block str_rest_info_block_3 css_font_size_14">
+                                <div class="zagolovok_resto_opisanie all_filtr_nazvanie_polya css_font_size_12">
+                                    ВЫДЕРЖКА ИЗ МЕНЮ
+                                </div>
+                                <div class="about_resto_menu">
+                                    <div class="menu_zagolovok_bluda menu_zagolovok_salad css_font_size_12">САЛАТЫ</div>
+                                    <div class="menu_salad_1 all_resto_menu_name_position">-</div>
+                                    <div class="menu_salad_1_cost all_resto_menu_cost_position">-</div>
+                                    <div class="menu_salad_2 all_resto_menu_name_position">-</div>
+                                    <div class="menu_salad_2_cost all_resto_menu_cost_position">-</div>
+                                    <div class="menu_zagolovok_bluda menu_zagolovok_soup css_font_size_12">ПЕРВЫЕ БЛЮДА</div>
+                                    <div class="menu_soup_1 all_resto_menu_name_position">-</div>
+                                    <div class="menu_soup_1_cost all_resto_menu_cost_position">-</div>
+                                    <div class="menu_soup_2 all_resto_menu_name_position">-</div>
+                                    <div class="menu_soup_2_cost all_resto_menu_cost_position">-</div>
+                                    <div class="menu_zagolovok_bluda menu_zagolovok_dishes css_font_size_12">ГОРЯЧИЕ БЛЮДА</div>
+                                    <div class="menu_main_dishes_1 all_resto_menu_name_position">-</div>
+                                    <div class="menu_main_dishes_1_cost all_resto_menu_cost_position">-</div>
+                                    <div class="menu_main_dishes_2 all_resto_menu_name_position">-</div>
+                                    <div class="menu_main_dishes_2_cost all_resto_menu_cost_position">-</div>
+                                    <div class="menu_zagolovok_bluda menu_zagolovok_drinks css_font_size_12">НАПИТКИ</div>
+                                    <div class="menu_drinks_1 all_resto_menu_name_position">-</div>
+                                    <div class="menu_drinks_1_cost all_resto_menu_cost_position">-</div>
+                                    <div class="menu_drinks_2 all_resto_menu_name_position">-</div>
+                                    <div class="menu_drinks_2_cost all_resto_menu_cost_position">-</div>
+                                </div>
+                                </br>
+                            </div>
+                            
+                            <div class="str_rest_info_block str_rest_info_block_4 css_font_size_14">
+                                <div class="zagolovok_resto_opisanie all_filtr_nazvanie_polya css_font_size_12">
+                                    ОСОБЕННОСТИ
+                                </div>
+                                <div class="about_resto_feature">
+                                    <!--div class='wr_img'><img class='all_resto_feature_name_position css_font_size_12' src='img/feature/actor.png' /></div><div class='text_feature'>есть сцена</div>
+                                    <div class='wr_img'><img class='all_resto_feature_name_position css_font_size_12' src='img/feature/actor.png' /></div><div class='text_feature'>есть сцена</div>
+                                    <div class='wr_img'><img class='all_resto_feature_name_position css_font_size_12' src='img/feature/actor.png' /></div><div class='text_feature'>есть сцена</div>
+                                    <div class='wr_img'><img class='all_resto_feature_name_position css_font_size_12' src='img/feature/actor.png' /></div><div class='text_feature'>есть сцена</div>
+                                    <div class='wr_img'><img class='all_resto_feature_name_position css_font_size_12' src='img/feature/actor.png' /></div><div class='text_feature'>есть сцена</div>
+                                    <div class='wr_img'><img class='all_resto_feature_name_position css_font_size_12' src='img/feature/actor.png' /></div><div class='text_feature'>есть сцена</div>
+                                    <div class='wr_img'><img class='all_resto_feature_name_position css_font_size_12' src='img/feature/actor.png' /></div><div class='text_feature'>есть сцена</div>
+                                    <div class='wr_img'><img class='all_resto_feature_name_position css_font_size_12' src='img/feature/actor.png' /></div><div class='text_feature'>есть сцена</div>
+                                    <div class='wr_img'><img class='all_resto_feature_name_position css_font_size_12' src='img/feature/actor.png' /></div><div class='text_feature'>есть сцена</div>
+                                    <div class='wr_img'><img class='all_resto_feature_name_position css_font_size_12' src='img/feature/actor.png' /></div><div class='text_feature'>есть сцена</div>
+                                    <div class='wr_img'><img class='all_resto_feature_name_position css_font_size_12' src='img/feature/actor.png' /></div><div class='text_feature'>есть сцена</div-->
+                                </div>
+                                </br>
+                            </div>
+
+                            <div class="str_rest_info_block str_rest_info_block_2 css_font_size_14">
+                                <div class="zagolovok_resto_opisanie all_filtr_nazvanie_polya css_font_size_12">
+                                    О ЗАВЕДЕНИИ
+                                </div>
+                                <div class="about_resto_opisanie">
+                                    Описание заведения отсутствует
+                                </div>
+                                </br>
+                            </div>
+                    </div>
+<!--------------- КОНЕЦ - СТРАНИЦА РЕСТОРАНА --------------------->
+
+<!--------------- СТРАНИЦА БРОНИРОВАНИЯ --------------------->
+                    <div class="content_zabronirovat_stol all_contents">
+
+                        <form id="forma_broni" class="forma_broni" action="http://test_to_app.zakazstolov24.ru/booking.php" method="post">
+
+
+                                <div class="date_broni_wr all_big_wr">
+                                    <div class="all_medium_wr all_margin_center">
+                                        <div class="pointer"></div>
+                                        <span class="name_for_input all_margin_center css_font_size_14">ДАТА ВИЗИТА</span>
+                                        <div class="all_small_wr all_mini_input all_margin_center" >
+                                            <input id="date_broni_input" class="css_font_size_16" value="" type="text" name="date_broni" readonly="readonly"/>
+                                            <script>
+                                                var dt = new Date();
+                                                var month = dt.getMonth() + 1 + "";
+                                                var day = dt.getDate();
+                                                if (day<10) day ='0'+day;
+                                                var year = dt.getFullYear();
+                                                var str_month = 'сегодня';	
+                                              
+                                                switch (month){
+                                                        case "1":
+                                                                str_month = "января";
+                                                        break
+                                                        case "2":
+                                                                str_month = "февраля";
+                                                        break
+                                                        case "3":
+                                                                str_month = "марта";
+                                                        break
+                                                        case "4":
+                                                                str_month = "апреля";
+                                                        break
+                                                        case "5":
+                                                                str_month = "мая";
+                                                        break
+                                                        case "6":
+                                                                str_month = "июня";
+                                                        break
+                                                        case "7":
+                                                                str_month = "июля";
+                                                        break
+                                                        case "8":
+                                                                str_month = "августа";
+                                                        break
+                                                        case "9":
+                                                                str_month = "сентября";
+                                                        break
+                                                        case "10":
+                                                                str_month = "октября";
+                                                        break
+                                                        case "11":
+                                                                str_month = "ноября";
+                                                        break
+                                                        case "12":
+                                                                str_month = "декабря";
+                                                        break
+                                                }
+                                                $("#date_broni_input").val(day + " " + str_month);
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>    
+
+                                <div class="time_broni_wr all_big_wr">
+                                    <div class="all_medium_wr all_margin_center">
+                                        <div class="pointer"></div>
+                                        <span class="name_for_input all_margin_center css_font_size_14">ВРЕМЯ ВИЗИТА</span>
+                                        <div class="all_small_wr all_mini_input all_margin_center" >
+                                            <input id="time_broni_input" class="css_font_size_16" value="" type="text" name="time_broni" readonly="readonly" />
+                                            <script>
+                                                var dt_time = new Date();
+                                                var hour = dt_time.getHours()+1;
+                                                if (hour<10) hour='0'+hour;
+                                                var minute = dt_time.getMinutes();
+                                                if (minute<10) minute ='0'+minute;
+                                                time_broni_input.value = hour+':'+minute;
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>    
+
+                                <div class="number_person_wr all_big_wr">
+                                    <div class="all_medium_wr all_margin_center">
+                                        <div class="pointer"></div>
+                                        <span class="name_for_input all_margin_center css_font_size_14">ПЕРСОН</span>
+                                        <div class="all_small_wr all_mini_input all_margin_center">
+                                            <input class="css_font_size_16" placeholder="" value="2 персоны" type="text" name="number_person" readonly="readonly" />
+                                        </div>
+                                    </div>
+                                </div>    
+
+                                <div class="pojelaniy_broni_wr all_big_wr">
+                                    <div class="all_medium_wr all_margin_center">
+                                        <div class="pointer"></div>
+                                        <div class="all_small_wr all_margin_center">
+                                            <!--input class="css_font_size_16" placeholder="ПОЖЕЛАНИЯ: этаж, vip, ..." type="text" name="pojelaniy_broni"-->
+                                            <textarea class="css_font_size_16" rows="1" cols="1" name="pojelaniy_broni" placeholder="ПОЖЕЛАНИЯ: этаж, vip, ..."></textarea>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                                <input id="tel_number_input" style="display:none" type="text" value="" name="tel_number" />
+
+                                <div class="reserv_submit_wr all_but_big_wr">
+                                    <div class="all_but_medium_wr all_margin_center">
+                                        <input class="css_font_size_16 all_margin_center" type="text" value="ПОДТВЕРДИТЬ БРОНЬ" readonly />
+                                    </div>
+                                </div>    
+
+                                <input id="submit_broni" class="all_skritiy_input_submit" type="text">
+                        </form>
+
+                    </div>
+<!--------------- КОНЕЦ - СТРАНИЦА БРОНИРОВАНИЯ --------------------->
+
+
+<!--------------- СТРАНИЦА ПОИСК ПО ПАРАМЕТРАМ (ФИЛЬТР) --------------------->
+
+                    <div class="content_filtr all_contents">
+
+                        <div class="all_filtr_nazvanie_polya css_font_size_10">Средний чек</div>
+
+                        <form class="filtr_block_radio_but all_but_blocks css_font_size_14">
+                                <input type="checkbox"  id="chek_do_1500" class="bill_radio resto_filtr all_resto_filtr_input"/>
+                                <label class="all_but_medium_wr"><span>до 1500</span></label>
+
+                                <input type="checkbox"  id="chek_1500_3000" class="bill_radio resto_filtr all_resto_filtr_input" /> 
+                                <label class="all_but_medium_wr chek_1500_3000"><span>1500 - 3000</span></label>
+
+                                <input type="checkbox"  id="chek_bolee_3000" class="bill_radio resto_filtr all_resto_filtr_input" /> 
+                                <label class="all_but_medium_wr"><span>более 3000</span></label>
+                        </form> 
+
+                        <div class="filtr_metro_wr all_big_wr">
+                            <div class="all_filtr_nazvanie_polya css_font_size_10" style="display:none" >Станции метро</div>
+                            <div class="all_medium_wr all_margin_center">
+                                <div class="pointer"></div>
+                                <div class="pointer_close"></div>
+                                <div class="all_small_wr all_margin_center">
+                                    <!--input class="css_font_size_16" type="text" name="filtr_metro" value="" placeholder="ВЫБЕРИТЕ МЕТРО" readonly /-->
+                                    <div class="text_div css_font_size_16">ВЫБЕРИТЕ МЕТРО</div>
+                                </div>
+                            </div>
+                        </div>    
+
+                        <div class="filtr_kitchen_wr all_big_wr">
+                            <div class="all_filtr_nazvanie_polya css_font_size_10" style="display:none" >Тип кухни</div>
+                            <div class="all_medium_wr all_margin_center">
+                                <div class="pointer"></div>
+                                <div class="pointer_close"></div>
+                                <div class="all_small_wr all_margin_center">
+                                    <!--input class="css_font_size_16" type="text" name="filtr_kitchen" value="" placeholder="ВЫБЕРИТЕ ТИП КУХНИ" readonly /-->
+                                    <div class="text_div css_font_size_16">ВЫБЕРИТЕ ТИП КУХНИ</div>
+                                </div>
+                            </div>
+                        </div>    
+
+                        <div class="filtr_osobennost_wr all_big_wr">
+                            <div class="all_filtr_nazvanie_polya css_font_size_10" style="display:none" >Особенности заведения</div>
+                            <div class="all_medium_wr all_margin_center">
+                                <div class="pointer"></div>
+                                <div class="pointer_close"></div>
+                                <div class="all_small_wr all_margin_center">
+                                    <!--input class="css_font_size_16" type="text" name="filtr_osobennost" value="" placeholder="ВЫБЕРИТЕ ОСОБЕННОСТИ" readonly /-->
+                                    <div class="text_div css_font_size_16">ВЫБЕРИТЕ ОСОБЕННОСТИ</div>
+                                </div>
+                            </div>
+                        </div>  
+
+                        <div class="filtr_submit_wr all_but_big_wr">
+                            <div class="all_but_medium_wr all_margin_center">
+                                <a href="#" style="text-decoration: initial">
+                                <input type="button" id="construction" class="css_font_size_16 all_margin_center" value="ПОКАЗАТЬ ВСЕ">
+                                </a>
+                            </div>
+                        </div>    
+                    </div>
+
+<!--------------- КОНЕЦ - СТРАНИЦА ПОИСК ПО ПАРАМЕТРАМ --------------------->
+
+
+<!--------------- СТРАНИЦА ЗАВЕДЕНИЯ НА КАРТЕ --------------------->
+                    <div class="content_pokazat_na_karte all_contents">
+
+                          <div id="map"></div>
+
+                    </div>
+<!--------------- КОНЕЦ - СТРАНИЦА ЗАВЕДЕНИЯ НА КАРТЕ --------------------->
+
+
+<!--------------- СТРАНИЦА ИЗБРАННОЕ --------------------->
+                    <div class="content_izbrannoe all_contents">
+						<div class="all_favorites_id"></div>
+                        </br>
+                            <div class="restoran_wr">
+                            </div>
+                    </div>
+<!--------------- КОНЕЦ - СТРАНИЦА ИБРАННОЕ --------------------->
+
+
+<!--------------- СТРАНИЦА МОИ БРОНИ --------------------->
+                    <div class="content_moi_broni all_contents">
+                        <div class="all_booking">
+                                                                        <div class="moi_broni_info_big_wr css_font_size_14">
+                                                                                <div class="moi_broni_info_medium_wr all_margin_center">
+                                                                                        <div class="all_info_moi_broni moi_broni_resto_name">
+                                                                                                НАЗВАНИЕ
+                                                                                        </div>
+                                                                                        <div class="all_info_moi_broni"> 
+                                                                                                Принята
+                                                                                        </div>	
+                                                                                        <div class="all_info_moi_broni moi_broni_text_data_zayavki css_font_size_10"> 
+                                                                                                2015.03.02</br>11:00
+                                                                                        </div>
+                                                                                        <div class="all_info_moi_broni moi_broni_text_data_vizita css_font_size_10">
+                                                                                                <div class="moi_broni_vremya_zayavki">2015.03.02</div><div class="moi_broni_data_zayavki">11:00</div>
+                                                                                        </div>
+                                                                                        <div class="all_info_moi_broni delete_line_moi_broni">
+                                                                                        </div>	
+                                                                                </div>
+                                                                        </div>
+                        </div>
+
+                    </div>
+<!--------------- КОНЕЦ - СТРАНИЦА МОИ БРОНИ --------------------->
+
+                </div>
+
+            </div>
+<!--------------- КОНЕЦ - wrapper --------------------->
+
+
+        
+<!--------------- МЕНЮ ------------------>
+        <div class="wr_menu">
+                <div class="wr_menu_content">
+                        <div class="menu_decor">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                        </div>
+                </div>
+        </div>
+<!--------------- КОНЕЦ - МЕНЮ ------------------> 
+
+
+<!--------------- МОДАЛЬНЫЕ ОКНА -------------------->
+    <!-- модальное окно - общая ЗАЛИВКА -->
+            <div class="zalivka_modal all_modals" id="zalivka_modal"></div>	
+    <!-- конец - модальное окно - общая ЗАЛИВКА -->
+    
+    
+    <!-- модальное окно - MENU -->
+            <div class="all_modals menu_modal">
+                    <div class="menu_decor">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                    </div>
+                    <div class="menu_content css_font_size_16">
+                            <div class="item_k_spisku_restoranov all_menu_item">
+                                    <div class="all_icons_for_menu icon_k_spisku_restoranov"></div>
+                                    <div class="all_menu_item_text">Все рестораны</div>
+                            </div>
+                            <div class="item_forma_broni all_menu_item">
+                                    <div class="all_icons_for_menu icon_forma_broni"></div>                                                    
+                                    <div class="all_menu_item_text">Форма бронирования</div>
+                            </div>
+                            <div class="item_menu_poisk_param all_menu_item">
+                                    <div class="all_icons_for_menu icon_poisk_param"></div>                                                    
+                                    <div class="all_menu_item_text">Фильтр</div>
+                            </div>
+                            <div class="item_menu_poblizoti all_menu_item">
+                                    <div class="all_icons_for_menu icon_poblizoti"></div>                                                    
+                                    <div class="all_menu_item_text">На карте</div>
+                            </div>
+                            <div class="item_menu_izbrannoe all_menu_item">
+                                    <div class="all_icons_for_menu icon_izbrannoe"></div>                                                    
+                                    <div class="all_menu_item_text">Избранное</div>
+                            </div>
+                            <div class="item_menu_broni all_menu_item">
+                                    <div class="all_icons_for_menu icon_broni"></div>                                                    
+                                    <div class="all_menu_item_text">Мои брони</div>
+                            </div>
+                            <div class="item_menu_dannie all_menu_item">
+                                    <div class="all_icons_for_menu icon_dannie"></div>                                                    
+                                    <div class="all_menu_item_text">Мои данные</div>
+                            </div>
+                    </div>
+            </div>
+    <!-- конец - модальное окно - MENU -->
+    
+    
+    <!-- модальное окно - контакты -->
+            <div class="all_modals call_modal">
+                    <div class="call_modal_content">
+                            <div class="close_modal"></div>
+
+                            <div class="zakazat_zvonok_wr all_but_big_wr">
+                                <div class="all_but_medium_wr all_margin_center">
+                                    <input class="css_font_size_14 all_margin_center" type="button" value="ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК" />
+                                </div>
+                            </div>    
+
+                            <div class="sdelat_zvonok_wr all_but_big_wr">
+                                <div class="all_but_medium_wr all_margin_center">
+                                    <input class="css_font_size_14 all_margin_center" type="button" value="НАПИСАТЬ НАМ" />
+                                </div>
+                            </div>
+
+                            <div class="contacts css_font_size_10">
+                                +7 (495) 722-00-23 <br/><br/>
+                                <span>info@cardway.ru</span>
+                            </div>
+
+                     </div>
+            </div>
+    <!-- конец - модальное окно - контакты -->
+
+    <!-- модальное окно - выбор БАНКА -->
+            <div class="filtr_banck_modal all_filtr_modals all_modals css_font_size_16">
+                    <div class="all_modal_head">Выберите Ваш Банк</div>
+                    
+                    <form id="filtr_banck_modal_content" class="all_modals_content"></form>
+                    
+                    <div class="contacts css_font_size_10" style="font-size: 13px;">
+                            +7 (495) 722-00-23 <br><br>
+                            info@cardway.ru
+                    </div>                    
+            </div>
+    <!-- конец - модальное окно - выбор БАНКА -->
+
+    <!-- модальное окно - выбор МЕТРО -->
+            <div class="filtr_metro_modal all_filtr_modals all_modals css_font_size_16">
+                    <div class="all_modal_head">Выберите метро</div>
+                    <input type="text" class="metro_search" value="" placeholder="ПОИСК МЕТРО" />
+                    <form id="filtr_metro_modal_content" class="all_modals_content"></form>
+                    <div class="filtr_metro_reset_but_wr all_but_big_wr">
+                        <div class="all_but_medium_wr all_margin_center">
+                            <input form="#" class="css_font_size_16 all_margin_center" type="reset" value="СБРОСИТЬ" />
+                        </div>
+                    </div>    
+                    <div class="all_ok_close_but all_but_big_wr">
+                        <div class="all_but_medium_wr all_margin_center">
+                            <input class="css_font_size_16 all_margin_center" type="button" value="OK" />
+                        </div>
+                    </div>    
+            </div>
+    <!-- конец - модальное окно - выбор МЕТРО -->
+
+    <!-- модальное окно - выбор ТИПА КУХНИ -->
+            <div class="filtr_kitchen_modal all_filtr_modals all_modals css_font_size_16">
+                    <div class="all_modal_head">Выберите тип кухни</div>
+                    
+                    <form id="filtr_kitchen_modal_content" class="all_modals_content"></form>
+                    <div class="filtr_kitchen_reset_but_wr all_but_big_wr">
+                        <div class="all_but_medium_wr all_margin_center">
+                            <input form="#" class="css_font_size_16 all_margin_center" type="reset" value="СБРОСИТЬ" />
+                        </div>
+                    </div>    
+                    <div class="all_ok_close_but all_but_big_wr">
+                        <div class="all_but_medium_wr all_margin_center">
+                            <input class="css_font_size_16 all_margin_center" type="button" value="OK" />
+                        </div>
+                    </div>    
+            </div>
+    <!-- конец - модальное окно - выбор ТИПА КУХНИ -->
+
+    <!-- модальное окно - выбор ОСОБЕННОСТИ -->
+            <div class="filtr_osobennost_modal all_filtr_modals all_modals css_font_size_16">
+                    <div class="all_modal_head">Выберите особенности</div>
+                    
+                    <form id="filtr_osobennost_modal_content" class="all_modals_content"></form>
+                    <div class="filtr_osobennost_reset_but_wr all_but_big_wr">
+                        <div class="all_but_medium_wr all_margin_center">
+                            <input form="#" class="css_font_size_16 all_margin_center" type="reset" value="СБРОСИТЬ" />
+                        </div>
+                    </div>    
+                    <div class="all_ok_close_but all_but_big_wr">
+                        <div class="all_but_medium_wr all_margin_center">
+                            <input class="css_font_size_16 all_margin_center" type="button" value="OK" />
+                        </div>
+                    </div>    
+            </div>
+    <!-- конец - модальное окно - выбор ОСОБЕННОСТИ -->
+    
+    <!-- модальное окно - ALERT -->
+            <div class="new_alert_modal all_modals all_margin_center css_font_size_16">
+                    <div class="all_modal_head" style="height: initial"></div>
+                    <div class="all_modals_content"></div>
+                    <div class="all_ok_close_but all_but_big_wr" style="height: 30%">
+                        <div class="all_but_medium_wr all_margin_center">
+                            <input class="css_font_size_16 all_margin_center" type="button" value="OK" />
+                        </div>
+                    </div>    
+            </div>
+    <!-- конец - модальное окно - ALERT -->
+
+    <!-- модальное окно - ВЫБОР ВРЕМЕНИ/ДАТЫ/КОЛИЧЕСТВО ПЕРСОН -->
+            <div class="modal_param_change all_modals all_margin_center">
+                <div class="wr_block_result">
+                    <div class="css_font_size_16">Укажите...</div>
+                    <input id="wr_block_result_input" value="" type="text" readonly />
+                </div>
+                <div class="wr_drum">
+                    <div class="first_drum_block all_drums">
+                        <div class="first_drum_content all_drums_content">
+                            <div>Данные</div>
+                        </div>
+                    </div>
+                    <div class="second_drum_block all_drums">
+                        <div class="second_drum_content all_drums_content"></div>
+                    </div>
+                </div>
+                <div class="all_ok_close_but all_but_big_wr">
+                    <div class="all_but_medium_wr all_margin_center">
+                        <input class="css_font_size_16 all_margin_center" type="button" value="OK" />
+                    </div>
+                </div>
+            </div>
+    <!-- конец - модальное окно - ВЫБОР ВРЕМЕНИ -->
+    
+    <!-- модальное окно - ЗАГРУЗКА -->
+    
+            <div class="modal_load_page all_modals all_margin_center css_font_size_16">
+                <div class="all_modal_head css_font_size_14" style="height: initial">Подождите идет загрузка...</div>
+                    <img class="wait all_margin_center" src="img/wait.gif" /> <!--картинка индикатора загрузки-->
+                    <div class="all_ok_close_but all_but_big_wr">
+                        <div class="all_but_medium_wr all_margin_center">
+                            <input class="css_font_size_16 all_margin_center" type="button" value="OK" />
+                        </div>
+                    </div>    
+            </div>
+ 
+    <!-- конец - модальное окно - ЗАГРУЗКА -->
+    
+    <!-- модальное окно - НАПИСАТЬ НАМ -->
+    
+            <!--div class="mail_to_modal all_modals all_margin_center css_font_size_16">
+                    <div class="all_modal_head">Введите текс сообщения</div>
+                    
+                    <form id="filtr_osobennost_modal_content" class="all_modals_content">
+                        <input />
+                    </form>
+                    <div class="all_ok_close_but all_but_big_wr">
+                        <div class="all_but_medium_wr all_margin_center">
+                            <input form="#" class="css_font_size_16 all_margin_center" type="reset" value="СБРОСИТЬ" />
+                        </div>
+                    </div>    
+                    <div class="all_ok_close_but all_but_big_wr">
+                        <div class="all_but_medium_wr all_margin_center">
+                            <input class="css_font_size_16 all_margin_center" type="button" value="OK" />
+                        </div>
+                    </div>    
+            </div-->
+            
+            <div class="mail_to_modal all_modals all_margin_center css_font_size_16">
+                    <div class="all_modal_head" >Введите текст сообщения</div>
+                    <form class="forma_regist"  action="http://test_to_app.zakazstolov24.ru/mail_to_processing.php" method="post">
+                        <div class="all_modals_content">
+                            <textarea id="mail_for_us" class="css_font_size_16" value="" rows="5" name="napisat_nam" placeholder="  ..."></textarea>
+                        </div>
+                        <div class="mail_to_but_reset all_ok_close_but all_but_big_wr">
+                            <div class="all_but_medium_wr all_margin_center">
+                                <input form="#" class="css_font_size_16 all_margin_center" type="button" value="СБРОСИТЬ" readonly/>
+                            </div>
+                        </div>    
+                        <div class="mail_to_but_ok all_ok_close_but all_but_big_wr">
+                            <div class="all_but_medium_wr all_margin_center">
+                                <input class="css_font_size_16 all_margin_center" type="button" value="OK" readonly/>
+                            </div>
+                        </div> 
+                    </form>
+            </div>
+
+ 
+    <!-- конец - модальное окно - НАПИСАТЬ НАМ -->
+    
+    <!-- кнопка наверх -->
+    <div class="but_up">
+        <div>Наверх</div>
+    </div>
+    <!-- конец - кнопка наверх -->
+    
+    
+<!--------------- КОНЕЦ - МОДАЛЬНЫЕ ОКНА -------------------->
+
+<!--------------- ТЕСТИЛКА -------------------->
+
+
+
+
+<!--------------- КОНЕЦ - ТЕСТИЛКА -------------------->
+
+		
+        
+    </body>
+
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+	
+</html>
