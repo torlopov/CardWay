@@ -1,0 +1,1610 @@
+
+/* ОБЩИЕ ПРАВИЛА ДЛЯ ГРУПП ЭЛЕМЕНТОВ */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-weight: normal;
+}
+
+.css_font_size_6{
+    font-size: 6px;
+}
+.css_font_size_8{
+    font-size: 8px;
+}
+.css_font_size_10{
+    font-size: 10px;
+}
+.css_font_size_12{
+    font-size: 12px;
+}
+.css_font_size_14{
+    font-size: 14px;
+}
+.css_font_size_16{
+    font-size: 16px;
+}
+
+.all_margin_center{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.all_contents{ /* Все страницы приложения */
+	display:none;
+	width:92%;
+	height:80%;
+	margin:0% 0 0 8%;
+	position: relative;
+        /*position: absolute;*/
+        bottom: 0;
+}
+
+.all_menu_item{ /* Пункты меню из списка меню */
+        position: relative;
+	display:table;
+	width:88%;
+	height:14.3%;
+	border-bottom:dashed 1px silver;
+	vertical-align:middle;
+	text-align:left;
+	/*padding:0 3% 0 3%;*/
+        left: 6%;
+	color:#454545;
+        background-position-x: 0%;
+}
+
+.all_menu_item_hover{
+        background-position-x: 100% !important;
+        color: black !important;
+        font-weight: bold !important;
+}
+
+.all_menu_item_text{	/* Контент пунктов меню */
+	display:table-cell;
+	vertical-align:middle;
+        width: 82%;
+        font-weight: inherit;
+}
+
+.all_icons_for_menu{
+    display: inline-block;
+    position: absolute;
+    width: 12%;
+    height: 50%;
+    background: url(../img/cins_for_menu_v2.png) no-repeat;
+    background-size: 300% 800%;
+    background-position-x: inherit !important;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.all_modals{ /* Все всплывающие окна */
+	position: fixed;
+	display: none;
+        text-align:center;
+        width: 100%;
+        height: 100%;
+	z-index:100;
+	/*padding-top: 4%;*/
+        top:0;
+	/*bottom: 0;*/
+	margin: auto;
+}
+
+.all_modals_content{ /* Все элементы всплывающих окон / временное правило */
+        position: relative;
+        display: inline-block;
+        height: 77%;
+        width: 80%;
+        overflow-y: scroll;
+        text-align: left;
+        border-top: 4px solid #ff5129;
+        border-bottom: 4px solid #ff5129;
+}
+
+.all_skritiy_input_submit{
+        display: none;
+}
+
+.all_big_wr, .all_but_big_wr {
+        position: relative;
+        width: 100%;
+        height: 20%;
+}
+
+.all_medium_wr {
+        display:table;
+        width: 94%;
+        height: 75%;
+        background: #d0d0d0;
+        border-radius: 5px;
+        box-shadow: black 2px 5px 10px -5px;
+}
+
+.all_small_wr {
+        display: table;
+        width: 87%;
+        height: 75%;
+        right: -8%;
+        vertical-align: middle;
+}
+
+.all_small_wr input, .all_small_wr div, .all_small_wr textarea{
+        display: table-cell;
+        vertical-align: middle;
+        width: 97%;
+        height: 100%;
+        padding-left: 3%;
+        border-radius: 5px;
+        background: white;
+        text-align:inherit;
+        box-shadow: inset black 3px 4px 12px -6px;
+}
+
+.all_but_big_wr input{
+        width: 100%;
+        background: none !important;
+        color: white;
+        text-shadow: 0px 1px 2px black;
+        text-align:center;
+}
+
+.all_but_medium_wr{
+        width: 85%;
+        height: 65%;
+        background: url(../img/bg_but.png);
+        background-size: 100% 100%;
+        //background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7e60), color-stop(48%,#ff7e60), color-stop(52%,#ff5129), color-stop(100%,#ff5129));
+        color:white;
+        border-radius:5px;
+        border: solid 1px #666666;
+}
+
+.all_but_medium_wr_hover{
+        background-color:#ff5128;
+        background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff5129), color-stop(38%,#ff5129), color-stop(62%,#ff7e60), color-stop(100%,#ff7e60));
+        box-shadow: inset black 1px 1px 15px -5px;
+}
+
+.all_modal_head {
+        display: inline-block;
+        margin: auto;
+        width: 85%;
+        height: 7%;
+        margin-top:4%;
+        bottom: initial;
+        text-align: center;
+        //border-bottom: 4px solid #ff5129;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+}
+
+.all_banners{
+        display: none;
+        z-index: 1;
+        height: 17%;
+        /*bottom: -1%;*/
+}
+
+.banner_poisk_wr .all_medium_wr{
+        height: 65%;
+}
+
+/* КОНЕЦ - ОБЩИЕ ПРАВИЛА ДЛЯ ГРУПП ЭЛЕМЕНТОВ */
+
+
+html, body, #wrapper{
+        height: 100%;
+        width:100%;
+}
+html{
+        background: url(../img/main_bg_v8.png) repeat;
+        background-size: 50%;
+}
+
+#wrapper{
+	position:absolute;
+	/*background-color:#f5f5f5;*/
+	font-family:verdana;
+	/*background: url(../img/main_bg_v2.png) repeat;
+        background-size: 1.5%;*/
+}
+
+
+/* ШАПКА */
+.header{
+	position:relative;
+	/*display:table;*/
+	width:100%;
+	height:3%;
+	top:0;
+	border-bottom:1px solid #ff5129;
+        margin-bottom: -1px;
+        text-align:center;
+	background-color:#2b2b2b;
+	z-index:10;
+}
+
+.logo{
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: 30%;
+        height: 150%;
+        background-color: silver;
+        //background: url(../img/bg_but.png) repeat-x;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e1e1e1), color-stop(48%,#e1e1e1), color-stop(52%,#bdbdbd), color-stop(100%,#bdbdbd));
+        border-radius: 0 0 5px 5px;
+        border: 1px solid #ff5129;
+        border-top: none;
+        z-index: 1;
+}
+
+.logo_img{
+        display: block;
+        background-image: url(../img/logo_cardway_big.png);
+        background-repeat: no-repeat;
+        background-size: 65% 70%;
+        background-position: 50% 50%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+}
+
+.but_call_wrap{
+        position: absolute;
+        width: 15%;
+        height: 220%;
+        right: 3%;
+        /*outline: solid 2px white;*/
+}
+
+.but_call_wrap_hover .but_call_body_img{
+        background-position: -5% 29% !important;
+}
+
+.but_call_body{
+        width: 60%;
+        height: 80%;
+        top: 0px;
+        right: 0%;
+        left: 0%;
+        margin: auto;
+        position: absolute;
+        background: url(../img/bg_but.png);
+        background-size: 100% 100%;
+        //background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7e60), color-stop(48%,#ff7e60), color-stop(52%,#ff5128), color-stop(100%,#ff5128));
+        border-radius: 0em 0em 5px 5px;       
+}
+
+.but_call_body_img{
+        width: 100%;
+        height: 100%;
+        background: url(../img/cins_for_menu_v2.png) no-repeat;
+        background-size: 250% 780%;
+        background-position: 50% 29%;
+}
+/* КОНЕЦ - ШАПКА */
+
+/* КНОПКА "НАВЕРХ" */
+.but_up {
+  display: none;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.70);
+  /* height: 30px; */
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  letter-spacing: 1px;
+  z-index: 100;
+}
+/* КОНЕЦ - КНОПКА "НАВЕРХ" */
+
+/* МЕНЮ */
+.wr_menu{
+        position: absolute;
+        left: 0;
+        width: 8%;
+        height: 80%;
+        z-index: 100;
+}
+
+.wr_menu_content{
+        width: 45%;
+        left: 0;
+        position: absolute;
+        background: #d0d0d0;
+        border-radius: 0 5px 5px 0;
+        margin: auto;
+        bottom: 2%;
+        box-shadow: 4px 3px 10px -5px black;
+        border: 1px solid silver;
+}
+
+.menu_modal{
+        display: none;
+        width: 80%;
+        left: 0%;
+        height: 74%;
+        top: initial;
+        bottom: 2%;
+        background: white;
+	border-radius:0 5px 5px 0;
+	box-shadow: 4px 3px 10px -5px black;
+}
+
+.menu_decor{
+        position: absolute;
+        display: inline-block;
+        width: 15px;
+        /* height: 50px; */
+        top: 5px;
+        right: -5px;
+        z-index: 1;
+}
+
+.menu_decor div{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: #FF4F21;
+        margin: 5px 0;
+}
+
+.menu_modal .menu_decor{
+        width: 35px;
+        right: 5px;
+}
+
+.menu_content{
+	display:table;
+	width:100%;
+	height:100%;
+}
+
+.item_menu_dannie{
+	border-bottom:none;	
+}
+
+.icon_forma_broni{
+        background-position: 0 14.5%;
+}
+
+.icon_call_back{
+        background-position: 0 29%;
+}
+
+.icon_poisk_param{
+        background-position: 0 43.5%;
+}
+
+.icon_poblizoti{
+        background-position: 0 58%;
+}
+
+.icon_izbrannoe{
+        background-position: 0 72.5%;
+}
+
+.icon_broni{
+        background-position: 0 87%;
+}
+
+.icon_dannie{
+        background-position: 0 100%;
+}
+/* КОНЕЦ - МЕНЮ */
+
+
+/* СТРАНИЦА РЕГИСТРАЦИИ */
+
+.content_str_reg{
+	display:block;
+}
+
+.forma_regist{
+        display: inline;
+}
+
+.banner_str_reg{
+	display:block;
+}
+
+.banner_img{
+	width:100%;
+	height:100%;
+	display:table;
+	background: url(../img/baner_reg_v1.png) no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+        box-shadow: inset 0 -10px 30px -5px black;
+        text-shadow: 0px 1px 2px black;
+}
+
+.slogan{
+	display:table-cell;
+	color:white;
+	vertical-align:middle;
+	text-align:right;
+	line-height: 180%;
+	padding: 8% 6% 0% 0;
+	text-shadow: 0 0 25px black, 0 0 15px black, 0 0 10px black, 0 0 5px black, 0 0 1px black;
+}
+
+.slogan span{
+        color:#ff5128;
+        font-weight: bold;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+       /* text-shadow: 1px 1px 1px white;*/
+}
+
+.pointer {
+        display: table-cell;
+        position: absolute;
+	float: left;
+	width: 10%;
+	height: 100%;
+	background: url(../img/icon_1_v6.png) no-repeat;
+	background-size: 50% 40%;
+        background-size: 180% 40%;
+        background-position: 100% center;
+}
+/* КОНЕЦ - СТРАНИЦА РЕГИСТРАЦИИ */
+
+
+/* МОДАЛЬНЫЕ ОКНА */
+
+    /* Заливка */
+    #zalivka_modal{
+        position:fixed;
+        left: 0%;
+        background:rgba(0, 0, 0, 0.85);
+        z-index:100;
+        display: none;
+    }
+
+     /* Все Модальные окна */
+    .all_filtr_modals .all_modals_content input{
+        display: none;
+    }
+
+    .all_filtr_modals .all_modals_content label{
+        display: inline-block;
+        width: 93%;
+        margin: 0.5% 0;
+        padding: 3.5%;
+        color: white;
+        font-size: inherit;
+    }
+
+    .all_filtr_modals .all_modals_content input:checked + label{
+        background:#ff5129;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    /*.all_filtr_modals .all_modals_content label:active{
+        background:#FFB78F;
+        text-shadow: 1px 1px 1px black;
+    }*/
+
+    .all_filtr_modals .all_but_big_wr{
+        display: inline-block;
+        height: 11%;
+        width: 45%;
+    }
+    /* Конец - Все Модальные окна */
+
+    /* Модальное окно - выбор банка */
+    .filtr_banck_modal .contacts{
+        bottom:2%;
+    }
+    /* Конец - Модальное окно - выбор банка */ 
+
+    /* Модальное окно - контакты */
+    .close_modal{
+            position: absolute;
+            display: block;
+            background: url(../img/close_but_v2.png) no-repeat;
+            background-size: 200% 100%;
+            background-position: 100% center; 
+            width: 40px;
+            height: 40px;
+            top: -30%;
+            right: 0%;
+    }
+
+    .close_modal_hover{
+            background-position: 0% center;
+    }
+    
+
+    .call_modal_content{
+            position: absolute; 
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 90%;
+            height: 55%;
+            background: transparent;
+            box-shadow: none;
+            border: none;
+    }
+
+    .call_modal .zakazat_zvonok_wr, .call_modal .sdelat_zvonok_wr{
+            position: relative;
+            height: 50%;
+            margin-top: 0%;
+    }
+
+    .call_modal .all_but_medium_wr{
+            box-shadow: 0px 0px 30px 5px white;
+    }
+
+    .contacts {
+            width: 100%;
+            color: white;
+            text-align: center;
+            bottom: -30%;
+            position: absolute;
+            text-shadow: 0px 1px 2px black;
+    }
+    /* Конец - Модальное окно - контакты */
+
+    /* Модальное окно - ALERT */
+    .new_alert_modal {
+      width: 80%;
+      height: 30% !important;
+      min-height: 0 !important;
+      position: absolute;
+      top: -25%;
+    }
+
+    .new_alert_modal .all_modals_content {
+        height: initial;
+        width: initial;
+        overflow: auto;
+        padding: 5%;
+        margin: 5% 0;
+        color: white;
+    }
+    /* конец - Модальное окно - ALERT */
+    
+    /* Модальное окно - Выбор времени */    
+    .modal_param_change{
+          height: initial;
+          overflow-y: hidden;
+    }
+
+    .wr_drum{
+        //transform: rotate(90deg);
+        position: relative;
+        display: inline-block;
+        height: 25%;
+        width:100%;
+        margin:20% 0;
+    }
+
+    .wr_block_result input {
+        background: rgba(255,255,255,0.95);
+        font-weight: bold;
+        text-align: center;
+        border-radius: 10px;
+        margin: auto;
+        position: relative;
+        margin: 5% 0;
+        padding: 5%;
+        box-shadow: inset 2px 2px 10px 0px black;
+        width: 65%;
+        font-size: 28px;
+    }
+    
+    .wr_block_result div {
+        color:white;
+        margin-top: 10%;
+    }
+
+    .all_drums{
+        display: inline-block;
+        min-width: 30%;
+        height: 16%;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding: 45px 0;
+        border-radius: 10px;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,black), color-stop(40%,white), color-stop(60%,white), color-stop(100%,black));
+    }
+
+    .all_drums_content div{
+        //width: 80%;
+        color: white;
+        text-shadow: 1px 1px 5px black, 1px 1px 3px black, 1px 1px 2px black;
+        margin: auto;
+        height: 45px;
+        font-size: 26px;
+        padding: 0 14%;
+        white-space: nowrap;
+    }
+
+    .modal_param_change .all_ok_close_but{
+        position: absolute;
+        bottom: 5%;
+        height: 15%;
+        width: 50%;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+    /* конец - Модальное окно - Выбор времени */
+    
+    
+    /* Модальное окно - Ожидание загрузка */
+    .modal_load_page img{
+        height: 20%;
+        bottom: 16%;
+    }
+    
+    .modal_load_page .all_ok_close_but{
+        height: 15%;
+        bottom: 0;
+        position: absolute;
+        margin: 10% 0;
+    }
+    
+    /* конец - Модальное окно - Ожидание загрузка */
+    
+
+    /* Модальное окно - Написать нам */
+    /*.mail_to_modal{
+        height: 50% !important;
+    }*/
+    
+    .mail_to_modal .all_modal_head{
+        margin-top: 8%;
+    }
+    
+    .mail_to_modal .all_modals_content{
+        height: initial;
+    }
+    
+    .mail_to_modal .all_but_big_wr {
+        display: inline-block;
+        height: 11%;
+        width: 45%;
+    }
+    
+    .modal_load_page .all_ok_close_but{
+        height: 15%;
+        bottom: 0;
+        position: absolute;
+        margin: 10% 0;
+    }
+    
+    .all_modals_content textarea {
+        width: 90%;
+        padding: 5%;
+    }
+    /* конец - Модальное окно - Написать нам */
+    
+
+    
+    
+/* КОНЕЦ - МОДАЛЬНЫЕ ОКНА */
+
+
+/* ------------- СТРАНИЦА ВСЕ РЕСТОРАНЫ ----------------- */
+
+.restoran_wr{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 18%;
+	border-radius: 10px;
+        margin:2% 0;
+        color: gray;
+        /*text-shadow: 1px 1px 0px white;*/
+        
+}
+
+.restoran_block{
+        position: relative;
+        display: table;
+        padding: 1% 2%;
+        width: 91%;
+        height: 98%;
+	background-color: white;
+	border: 1px solid silver;
+	border-radius: 5px;
+	box-shadow: black 2px 5px 10px -5px;
+        z-index: 1;
+        /*margin: auto auto 0 auto;*/
+}
+
+.restoran_content{
+        text-shadow: 1px 1px 0px white;
+        display: table-cell;
+        vertical-align: middle;
+}
+
+.all_restoran_id, .all_restoran_map_cords{
+        display: none;
+}
+
+.all_restoran_info{
+        display: inline-block;
+        width: 90%;
+        margin-left: 5%;
+}
+
+.all_restoran_info span{
+        /*text-shadow: none;*/
+        color:black;
+}
+
+.all_restoran_rating {
+    position: relative;
+    right: 0;
+    width: 23%;
+    height: 18%;
+}
+
+.undefined{
+    background: url(../img/stars.png) no-repeat;
+    background-size: 100% 500%;
+    background-position: center 100%;
+}
+
+.rating_1{
+    background: url(../img/stars.png) no-repeat;
+    background-size: 100% 500%;
+    background-position: center 100%;
+}
+
+.rating_2{
+    background: url(../img/stars.png) no-repeat;
+    background-size: 100% 500%;
+    background-position: center 75%;
+}
+
+.rating_3{
+    background: url(../img/stars.png) no-repeat;
+    background-size: 100% 500%;
+    background-position: center 50%;
+
+}
+
+.rating_4{
+    background: url(../img/stars.png) no-repeat;
+    background-size: 100% 500%;
+    background-position: center 25%;
+
+}
+
+.rating_5{
+    background: url(../img/stars.png) no-repeat;
+    background-size: 100% 500%;
+    background-position: center 0%;
+
+}
+
+.restoran_name{
+    width: 70%;
+    margin:0 0 0 0%;
+}
+
+.restoran_name:before {
+    content: " ";
+    position: absolute;
+    background: #ff6633;
+    width: 3%;
+    height: 20px;
+    margin: 0px 0px 0 -5%;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -khtml-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+  
+.restoran_name span{
+        margin-bottom: 4%;
+        display: inline-block;
+        color:black;
+        font-weight: bold;
+        /*border-bottom: 1px solid #ff5129;*/
+        /*color: #ff5129;*/
+        /*text-shadow: 1px 1px 0px black;*/
+}
+
+.all_restoran_block_buts {
+        position: relative;
+        text-align: center;
+        width: 88%;
+        height: 100%;
+        /*background: #EAEAEA;*/
+        /*top: -1px;*/
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 0 0 5px 5px;
+        /*border: 1px solid silver;*/
+        /*z-index: 1;*/
+}
+
+.but_bron_vse_rest_wr .all_but_medium_wr {
+        width: 92%;
+        height: 76%;
+        margin: 0 auto;
+}
+
+div.but_bron_vse_rest_wr{
+        height: 50%;
+}
+
+
+div.but_podrobnee_vse_rest_wr,  div.but_map_vse_rest_wr{
+        display: inline-block;
+        height: 50%;
+        width: 49%;
+}
+
+div.but_podrobnee_vse_rest_wr .all_but_medium_wr,  div.but_map_vse_rest_wr .all_but_medium_wr{
+        border-radius: 0 0 5px 5px;
+        margin: 0 auto auto auto;
+        height: 80%;
+}
+/* ------------- КОНЕЦ - СТРАНИЦА ВСЕ РЕСТОРАНЫ ----------------- */
+
+
+/* ------------- СТРАНИЦА ПОИСК ПО ПАРАМЕТРАМ (ФИЛЬТР) ----------------- */
+
+.banner_str_filtr .banner_img{
+    background: url(../img/baner_filtr_v1.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+    /* Правила для заполненного поля фильтра */
+.all_filtr_wr_active .all_filtr_nazvanie_polya {
+    display: block !important;
+    
+}
+
+.all_filtr_nazvanie_polya {
+    padding: 2% 4% 2% 4%;
+    text-transform: uppercase;
+    text-align: right;
+    color: gray;
+    text-shadow: 1px 1px 0px white;
+}    
+    
+.all_filtr_wr_active{
+    height: initial;
+    margin: 3% 0 6% 0;
+    color:black !important;
+}
+
+.all_filtr_wr_active .all_medium_wr{
+    position: relative;
+    height: initial;
+    padding: 2% 0;
+}
+
+.all_filtr_wr_active .all_small_wr{
+    position: relative;
+    left: -5%;
+    width:85%;
+}
+
+.all_filtr_wr_active .text_div{
+    padding:3% 3% 3% 10%;
+    background: initial;
+    text-shadow: 1px 1px 0px white;
+    line-height: 130%;
+    background: rgb(255, 232, 225);
+}
+
+.all_filtr_wr_active span::before {
+    content: "\2713";
+    position: absolute;
+    color: #ff6633;
+    margin: 0px 0px 0 -8%;
+    -moz-border-radius: 3px 0 0 3px;
+    -khtml-border-radius: 3px 0 0 3px;
+}
+
+.all_filtr_wr_active .pointer{
+    display: none;
+}
+
+.all_filtr_wr_active .pointer_close{
+    position: absolute;
+    background: url(../img/close_but_v2.png) no-repeat;
+    background-size: 180% 85%;
+    background-position: 108% center;
+    width: 45px;
+    height: 45px;
+    /*top: -22px;*/
+    top:0;
+    bottom: 0;
+    right: -1%;
+    z-index: 100;
+    margin: auto;
+}
+    /* Конец - Правила для заполненного поля фильтра */
+
+.content_filtr{
+    margin-top: 2%;
+    height: 78%;
+}
+
+.resto_filtr_input_hover{
+    color: #ff5129 !important;
+}
+
+.filtr_block_radio_but {
+    position: relative;
+    text-align: center;
+    height: 10%;
+}
+
+.filtr_block_radio_but input{
+    display:none;
+}
+
+.filtr_block_radio_but input:checked + .all_but_medium_wr {
+    background: rgb(52, 52, 52);
+    //background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(52, 52, 52)), color-stop(0.48, rgb(52, 52, 52)), color-stop(0.52, rgb(29, 29, 29)), to(rgb(29, 29, 29)));
+}  
+
+.filtr_block_radio_but .all_but_medium_wr {
+    position: relative;
+    height: 90%;
+    width: 30%;
+    display: inline-table;
+}
+
+.filtr_block_radio_but span{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-shadow: 0px 1px 2px black;
+}
+
+.content_filtr .all_big_wr{
+    color:#A9A9A9;
+}
+
+.filtr_submit_wr .all_but_medium_wr{
+    display: table;
+}
+
+.filtr_submit_wr .all_but_medium_wr div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+}
+
+.filtr_metro_modal .metro_search{
+    display: inline-block;
+    margin: auto;
+    width: 75%;
+    height: 6%;
+    margin-bottom: 4%;
+    padding-left: 5%;
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 10px -3px black;
+}
+
+.filtr_metro_modal .all_modals_content{
+    height: 69%;
+}
+
+.content_vse_restorani_filtr{
+    outline: 1px solid black;
+    display: inline-block;
+    width:100%;
+    height: 60%;
+}
+
+
+
+
+/* ------------- КОНЕЦ - СТРАНИЦА ПОИСК ПО ПАРАМЕТРАМ (ФИЛЬТР) ----------------- */
+
+
+/* ------------- СТРАНИЦА РЕСТОРАНА ----------------- */
+
+.banner_buts_str_restorana_wr{
+    display: none;
+    height: 44% !important;
+    bottom:0;
+}
+
+.restoran_page_map_cords{
+    display: none;
+}
+
+.restoran_page_id{
+    display: none;
+}
+
+.banner_buts_str_restorana_wr .all_but_big_wr{
+    display: inline-block;
+    width: 42%;
+    height: 16%;
+    z-index:1;
+    bottom: -82%;
+    left: 11%;
+
+}
+
+.banner_buts_str_restorana_wr .all_but_medium_wr{
+    border-color: #d0d0d0;
+}
+
+.content_str_restorana{
+    /*position: absolute;*/
+    height: 53%;
+    text-shadow: 1px 1px 0px white;
+}
+
+.about_resto_name{
+    position: absolute; 
+    top:-78%;
+    left:-5%;
+    color:white;
+    z-index:1;
+    text-shadow: 0px 0px 7px white,  0px 0px 1px black, 0px 0px 3px black, 0px 0px 7px black;
+    border-bottom: solid 2px white;
+}
+
+.block_foto_restorana{
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    overflow:hidden;
+}
+
+.slide-dragcontainer{
+    position: absolute;
+    top: 0 !important; 
+    bottom: 0% !important;
+    left: -8% !important;
+    right: 0 !important;
+    margin:auto !important;
+    zoom: 1.15;
+    box-shadow: 0em 1em 2em -1em black;
+}
+
+.foto_restorana_shadow{
+    box-shadow: 0 5px 30px 5px black;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    z-index:10;
+    bottom: -1px;
+}
+
+
+.str_rest_info_block{
+    display: block;
+    height: 80%;
+    /*width: 100%;*/
+    width: 97%;
+    position: relative;
+    text-align: center;
+    margin: 3% 0;
+    top: -4%;
+    background: rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.str_rest_info_block .but_eshe_str_rest_wr input{
+    width: 100%;
+    text-align: center;
+    color: #7D7D7D;
+    background: none;
+    text-shadow: 1px 1px 0px white, 1px 1px 2px white;
+}
+
+.about_resto_feature {
+  text-align: center;
+  padding-right: 6px;
+}
+
+.wr_img_feature{
+    display: inline-table;
+}
+
+.text_feature{
+    /*opacity:0;*/
+    display: none;
+    position: absolute;
+    background: white;
+    border-radius: 5px;
+    border: solid 1px white;
+    padding: 15px;
+    box-shadow: 2px 2px 30px black;
+    text-transform: capitalize;
+    margin-top: -120px;
+    margin-left:0;
+}
+
+.wr_img {
+    display: inline-block;
+    padding: 14px;
+}
+
+.all_resto_feature_name_position{
+    width: 26px;
+}
+
+.str_rest_info_block_2, .str_rest_info_block_3, .str_rest_info_block_4 {
+    display: none;
+    margin: 5% 0 0 0;
+    width: 91%;
+    height: initial;
+    padding: 17% 2% 0% 4%;
+    text-align: left;
+}
+
+.str_rest_info_block_3 {
+    padding: 9% 3% 0% 3%;
+}
+
+.but_eshe_str_rest_wr{
+    bottom: 0;
+}
+
+.all_resto_info_block{
+    display: table;
+    height: 20%;
+    width: 96%;
+    position: relative;
+    margin: auto;
+    border-top: 1px dashed silver;
+}
+
+.about_resto_sale{
+    border-top:none;
+}
+
+.all_resto_info_block_text{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    width: 90%;
+    padding-left: 6%;
+    /*text-shadow: 1px 1px 0px white;*/
+}
+
+.about-resto-name_text{
+    padding-left: 2%;
+    /*text-align: right;*/
+}
+
+.all_resto_info_block_img{
+    display: table;
+    height: 54%;
+    width: 10%;
+    background: url(../img/big_icons.png) no-repeat;
+    background-size: 80% 600%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.about_resto_metro .all_resto_info_block_img{
+    background-position: center 20%;
+}
+
+.about_resto_adres .all_resto_info_block_img{
+    background-position: center 0%;
+}
+
+.about_resto_vremya .all_resto_info_block_img{
+    background-position: center 40%;
+}
+
+.about_resto_chek .all_resto_info_block_img{
+    background-position: center 60%;
+}
+
+.about_resto_sale .all_resto_info_block_img{
+    background-position: center 80%;
+}
+
+.about_resto_kitchen .all_resto_info_block_img {
+    background-position: center 100%;
+}
+
+div.but_zabronirovat_str_rest_wr{
+    height: 20%;
+}
+
+.zagolovok_resto_opisanie {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: right;
+  border-bottom: 2px solid #fff;
+  /* padding: 4% 0 2% 0; */
+  /* text-indent: 0em; */
+  /* background: rgba(0,0,0,0.3); */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff5129), color-stop(48%,#ff5129), color-stop(52%,#ff7e60), color-stop(100%,#ff7e60));
+  border-radius: 5px 5px 0 0;
+  color: white;
+  text-shadow: -1px -1px 0px black;
+  box-shadow: 0 10px 10px -5px white;
+}
+
+.all_resto_menu_name_position {
+  width: 67%;
+  display: inline-block;
+}
+
+.all_resto_menu_cost_position {
+  text-align: right;
+  font-style: italic;
+  width: 30%;
+  display: inline-block;
+}
+
+.menu_zagolovok_bluda {
+  margin: 7% 0 2% 0;
+  background: rgba(0,0,0,0.15);
+  text-align: center;
+  padding: 2.5%;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 1px solid #ff5129;
+  font-weight: bold;
+}
+
+    /* если нажали на кнопку еще */
+.about_resto_vremya, .about_resto_kitchen{
+    display: none;
+}
+    
+.content_str_restorana_full_open .about_resto_vremya, .content_str_restorana_full_open .about_resto_kitchen{
+    display: table;
+}
+
+.content_str_restorana_full_open .str_rest_info_block{
+    height: 98%;
+}
+
+.content_str_restorana_full_open .str_rest_info_block_2, .content_str_restorana_full_open .str_rest_info_block_3, .content_str_restorana_full_open .str_rest_info_block_4{
+    height: initial;
+}
+
+.content_str_restorana_full_open .all_resto_info_block{
+    height: 16.5%;
+}
+
+.content_str_restorana_full_open .but_eshe_str_rest_wr{
+    display: none;
+}
+
+.content_str_restorana_full_open .str_rest_info_block_2{
+    display: block;
+    text-indent: 1.5em;
+}
+
+.content_str_restorana_full_open .str_rest_info_block_3, .content_str_restorana_full_open .str_rest_info_block_4{
+    display: block;
+}
+    /* конец - если нажали на кнопку еще */
+
+
+
+
+/* ------------- КОНЕЦ - СТРАНИЦА РЕСТОРАНА ----------------- */
+
+
+
+/* ------------- СТРАНИЦА ИЗБРАННОЕ ----------------- */
+
+.content_izbrannoe{
+    background-position: center;
+    background-size: 60% 40%;
+}
+.all_favorites_id{
+    display: none;
+}
+
+.banner_str_izbrannoe .banner_img{
+    background: url(../img/baner_izbrannoe_v1.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.content_izbrannoe .restoran_wr .delete_line_moi_broni{
+    display: block !important;
+    right:0;
+}
+
+/* ------------- КОНЕЦ - СТРАНИЦА ИЗБРАННОЕ ----------------- */
+
+
+/* ------------- СТРАНИЦА МОИ БРОНИ ----------------- */
+
+.content_moi_broni{
+    position: relative;
+    overflow-y: scroll;
+    height: 80%;
+    display: none;
+    top: 0;
+    /*padding-top: 25%;*/
+}
+
+.banner_zagolovok_moi_broni {
+    /*position: fixed;*/
+    display: none;
+    width: 100%;
+    /*top: 3%;*/
+    /*border-bottom: 1px solid #FF5128;*/
+    background: url(../img/baner_moi_broni_v1.png) no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    box-shadow: 0 0px 14px -2px black;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.content_zagolovok_moi_broni {
+  display: inline-table;
+  height: 100%;
+  width: 94%;
+  /*position: absolute;*/
+  right: 2%;
+}
+
+.zagolovok_moi_broni_text{
+    display: table-cell;
+    /*width: 25%;*/
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    text-shadow: 1px 1px 5px black, 1px 1px 2px black, 1px 1px 6px black;
+}
+
+/*.all_booking{
+    height:100%;
+    width:100%;
+    padding-top: 28%;
+}*/
+
+
+.moi_broni_info_big_wr {
+    width: 96%;
+    /*height: 10%;*/
+    display: block;
+    /*outline: solid;*/
+    position: relative;
+    margin: 5% 0;
+}
+
+.moi_broni_info_medium_wr {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: table;
+    background: rgb(255, 232, 225);
+    border-radius: 5px;
+    border: solid 1px silver;
+}
+
+.all_info_moi_broni {
+    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-shadow: 1px 1px 0 white;
+    padding: 2.5% 1.5%;
+    /*outline:solid 1px blue;*/
+}
+
+.moi_broni_resto_name{
+    width: 34%;
+    border-right: dashed 1px silver;
+}
+
+.moi_broni_text_status{
+    width: 22%;
+}
+
+.delete_line_moi_broni {
+    position: absolute;
+    background: url(../img/close_but.png) no-repeat;
+    background-size: 55% 50%;
+    background-position: 100% center;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    bottom: 0;
+    right: -4.5%;
+    margin: auto;
+    /*outline: solid black 1px;*/
+    z-index: 100;
+}
+
+
+/* ------------- КОНЕЦ - СТРАНИЦА МОИ БРОНИ ----------------- */
+
+
+/* ------------- СТРАНИЦА БРОНИРОВАНИЯ ----------------- */
+
+.content_zabronirovat_stol{
+
+}
+
+.name_for_input{
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    /*width: 43%;*/
+    text-align: left;
+    padding-left: 11%;
+    color: black;
+    text-shadow: 1px 1px 0px white;
+}
+
+.all_mini_input {
+    width: 45%;
+    left: initial;
+    right: 2%;
+    text-align: center;
+}
+
+.all_mini_input input {
+    padding: 0;
+}
+
+.banner_forma_broni_empty_wr .all_medium_wr, .banner_forma_broni_full_wr .all_medium_wr, .banner_poisk_wr .all_medium_wr{
+    top:15%;
+    height: 65%;
+}
+
+.banner_forma_broni_full_wr input{
+    text-shadow: 1px 1px 0px white;
+    position: relative;
+    font-weight: bold;
+    line-height: 130%;
+    background: rgb(255, 232, 225);
+}
+
+.banner_forma_broni_full_wr .pointer{
+    background-position: -15% 50%;
+}
+
+.forma_broni{
+    display: inline;
+}
+
+div.pojelaniy_broni_wr{
+    height: 23%;
+}
+
+.date_broni_wr, .time_broni_wr, .number_person_wr{
+    height: 19% !important;
+}
+
+/* ------------- КОНЕЦ - СТРАНИЦА БРОНИРОВАНИЯ ----------------- */
+	
+
+/* ------------- СТРАНИЦА ПОКАЗАТЬ НА КАРТЕ ----------------- */
+.content_pokazat_na_karte{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*background: url(../img/img_na_karte.png) no-repeat;
+	background-position: center;
+	background-size: 100% 100%;*/
+	top: 0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	margin: auto;
+}
+
+/*.banner_pokazat_na_karte {
+    z-index: 100;
+}*/
+
+#map {
+        height: 100%;
+        width: 100%;
+        /*bottom: 10%;
+        right: 10%;
+        position: absolute;*/
+        /*zoom:2;*/
+}
+
+.gm-style div a div, .gm-style-cc{
+        display: none;
+    
+}
+
+.gmnoprint{    
+        /*zoom: 1.6;*/
+        right: 14% !important;
+        top: 40% !important;
+}
+
+
+.my_position{
+    //position: absolute;
+    //outline: solid;
+    height: 50px;
+    width: 50px;
+    background-color: #edf0fa;
+    background: url(../img/pointer_map_v6.png) no-repeat;
+    background-position: left center;
+    background-size: 200% 100%; 
+    border: 1px solid #a7b2a3;
+    border-radius: 4px;
+    z-index: 1000;
+    right: 14% !important;
+    margin-bottom: 20% !important;
+     
+}
+
+.my_position:hover{
+    background-position: right center !important;
+}
+
+
+/* ------------- КОНЕЦ - СТРАНИЦА ПОКАЗАТЬ НА КАРТЕ ----------------- */
+
+.asd{
+    background:black;
+    margin:20%;
+    position: absolute;
+};
+
+.banner_poisk_wr{
+    display: block;
+}
+
+
+.banner_poisk_wr input{
+    display: block;
+};
+
+.div_input{
+    display: none;
+};
+

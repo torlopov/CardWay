@@ -1,0 +1,43 @@
+
+
+
+.all_select span, .all_select input { 
+	font-size: 1.5em;
+}
+
+.all_banners input{
+        font-size: 2em;
+}
+
+.menu_content{
+	font-size:1em;
+}
+
+.all_but_box_content input, .all_but_box_content div{
+        font-size: 2em
+}
+
+
+.rest_submit_content{
+	font-size:0.6em;
+}
+
+h1{
+	font-size:2.5em;
+	font-weight: normal;
+}
+
+h2{
+	font-size:1.5em;
+	font-weight: normal;
+}
+
+h3{
+	font-size:1em;
+	font-weight: normal;
+}
+
+h4{
+	font-size:0.6em;
+	font-weight: normal;
+}
