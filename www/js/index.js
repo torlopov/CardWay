@@ -1237,9 +1237,9 @@ $("*").on("focusout", ".input_stop_click", function () {
         function onDeviceReady() {
                 document.addEventListener("backbutton", onBackKeyDown, false); // создаем обработчик события для кнопки back
         }
-        /*function onBackKeyDown() { //описываем что происходит после нажатия кнопки back 
-            //alert("Было нажатие. Массив:  "+mas_back_but);
-                if (zalivka_on === true){
+        function onBackKeyDown() { //описываем что происходит после нажатия кнопки back 
+            alert("Было нажатие. Массив:  ");
+               /* if (zalivka_on === true){
                         close_all_modals();
                 }
                 else {
@@ -1278,10 +1278,15 @@ $("*").on("focusout", ".input_stop_click", function () {
                                                                         resto_page ();
                                                                         break;
                         }
-                }
-        }*/
-		navigator.Backbutton.goHome(function() {
+                }*/
+        }
+		navigator.Backbutton.goBack(function() {
 		  alert('success');
+		}, function() {
+		  alert('fail');
+		});
+		navigator.Backbutton.goHome(function() {
+		   alert('success');
 		}, function() {
 		  alert('fail');
 		});
