@@ -29,6 +29,7 @@ C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\ant-build\re
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\ant-build\res\drawable-xhdpi\icon.png \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\_where-is-www.txt \
+C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\config.xml \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\cordova.js \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\cordova_plugins.js \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\css \
@@ -104,9 +105,11 @@ C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\i
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\img\feature\veranda.png \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\img\feature\vip.png \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\img\feature\wi_fi.png \
+C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\js\Backbutton.js \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\js\Coordinates.js \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\js\cordova.js \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\js\geolocation.js \
+C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\js\gps.js \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\js\gpsDetector.js \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\js\index.js \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\js\jquery-2.1.4.min.js \

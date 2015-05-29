@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0" id="com.coolappz.CardWay" version="1.1.5">
+    <name>CardWay</name>
+    <description>
+        Бронирование столов со скидкой в ресторанах Москвы.
+    </description>
+    <author email="i.torlopov@mail.ru" href="http://cardway.ru">
+        CardWay
+    </author>
+	<gap:plugin name="com.jmi2.cordova.geolocation" version="0.3.15"/>
+	<gap:plugin name="com.aculocity.plugin.networkinterface" version="2.0.0"/>
+	<gap:plugin name="com.badrit.backbutton" version="0.1.0" />
+	<gap:plugin name="com.butterflyeffect.plugins" version="0.1.1" />
+	
+	<icon density="ldpi" platform="android" src="images/logo.png"/>
+	<icon density="mdpi" platform="android" src="images/logo.png"/>
+	<icon density="hdpi" platform="android" src="images/logo.png"/>
+	<icon density="xhdpi" platform="android" src="images/logo.png"/>
+    <content src="index.html"/>
+    <access origin="*"/>
+    <preference name="orientation" value="portrait"/>
+	<preference name="permissions" value="none"/>
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+</widget>
