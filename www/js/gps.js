@@ -1,11 +1,16 @@
-
-var exec = require('cordova/exec');
-
-var gpsDetect = function() {};
-
-gpsDetect.prototype.checkGPS = function(alertShown, successCallback, failureCallback) {
-	exec(successCallback, failureCallback, 'GpsDetector', 'gpsDetection', [alertShown]);
+var networkinterface = function() {
 };
 
-var gpsDetect = new gpsDetect();
-module.exports = gpsDetect;
+networkinterface.getIPAddress = function(success, fail) {
+    cordova.exec(success, fail, "networkinterface", "getIPAddress", []);
+};
+
+networkinterface.getRouterAddress = function(success, fail) {
+    cordova.exec(success, fail, "networkinterface", "getRouterAddress", []);
+};
+
+networkinterface.showNetworkSettings = function(success, fail) {
+    cordova.exec(success, fail, "networkinterface", "showNetworkSettings", []);
+};
+
+module.exports = networkinterface;
