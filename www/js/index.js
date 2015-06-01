@@ -1236,7 +1236,7 @@ $("*").on("focusout", ".input_stop_click", function () {
 /* конец - ПРАВИЛА ДЛЯ INPUT */
 
 /* ОБРАБОТЧИК НАЖАТИЯ КНОПКИ BACK */
-        document.addEventListener("deviceready", onDeviceReady, false);
+        /*document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() {
                 document.addEventListener("backbutton", onBackKeyDown, true); // создаем обработчик события для кнопки back
         }
@@ -1282,7 +1282,7 @@ $("*").on("focusout", ".input_stop_click", function () {
                                                                         break;
                         }
                 }
-        }
+        }*/
 /* конец - ОБРАБОТЧИК НАЖАТИЯ КНОПКИ BACK */
 
 
