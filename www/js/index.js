@@ -1236,19 +1236,14 @@ $("*").on("focusout", ".input_stop_click", function () {
 /* конец - ПРАВИЛА ДЛЯ INPUT */
 
 /* ОБРАБОТЧИК НАЖАТИЯ КНОПКИ BACK */
-        document.addEventListener("deviceready", onDeviceReady, false);
-        function onDeviceReady() {
-            document.addEventListener("backbutton", onBackKeyDown, false); // создаем обработчик события для кнопки back
-			var success = function(status) {
-				alert('Message: ' + status);
-			}
-
-			var error = function(status) {
-				alert('Error: ' + status);
-			}
-
-				window.cache.clear( success, error );	
-        }
+        
+		
+		navigator.Backbutton.goBack(function() {
+			alert('success')
+		}, function() {
+			alert('fail')
+		});
+		document.addEventListener("backbutton", onBackKeyDown, false); // создаем обработчик события для кнопки back
         function onBackKeyDown() { //описываем что происходит после нажатия кнопки back 
                if (zalivka_on === true){
                         close_all_modals();

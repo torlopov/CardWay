@@ -161,6 +161,9 @@ jQuery(document).ready(function () {
 			bin.send(''); // завершаем обработку файла
         };
         XLM_update();
+		
+		
+		
         document.addEventListener("online", onOnline, false); //если пользователь online
         function onOnline() {
             XLM_update(); // то обновляем данные из XML
@@ -1233,13 +1236,16 @@ $("*").on("focusout", ".input_stop_click", function () {
 /* конец - ПРАВИЛА ДЛЯ INPUT */
 
 /* ОБРАБОТЧИК НАЖАТИЯ КНОПКИ BACK */
-        document.addEventListener("deviceready", onDeviceReady, false);
-        function onDeviceReady() {
-                document.addEventListener("backbutton", onBackKeyDown, false); // создаем обработчик события для кнопки back
-        }
-        /*function onBackKeyDown() { //описываем что происходит после нажатия кнопки back 
-            //alert("Было нажатие. Массив:  "+mas_back_but);
-                if (zalivka_on === true){
+        
+		
+		navigator.Backbutton.goBack(function() {
+			alert('success')
+		}, function() {
+			alert('fail')
+		});
+		document.addEventListener("backbutton", onBackKeyDown, false); // создаем обработчик события для кнопки back
+        function onBackKeyDown() { //описываем что происходит после нажатия кнопки back 
+               if (zalivka_on === true){
                         close_all_modals();
                 }
                 else {
@@ -1279,12 +1285,8 @@ $("*").on("focusout", ".input_stop_click", function () {
                                                                         break;
                         }
                 }
-        }*/
-		navigator.Backbutton.goHome(function() {
-		  alert('success');
-		}, function() {
-		  alert('fail');
-		});
+        }
+		
 /* конец - ОБРАБОТЧИК НАЖАТИЯ КНОПКИ BACK */
 
 
