@@ -117,9 +117,8 @@ C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\j
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\js\jquery.maskedinput.js \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\js\Position.js \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\js\PositionError.js \
-C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\plugins\cordova-plugin-dialogs \
-C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\plugins\cordova-plugin-dialogs\www \
-C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\plugins\cordova-plugin-dialogs\www\android \
-C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\plugins\cordova-plugin-dialogs\www\notification.js \
-C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\plugins\cordova-plugin-dialogs\www\android\notification.js \
+C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\plugins\cordova-plugin-network-information \
+C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\plugins\cordova-plugin-network-information\www \
+C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\plugins\cordova-plugin-network-information\www\Connection.js \
+C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\plugins\cordova-plugin-network-information\www\network.js \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\ant-build\AndroidManifest.xml \
