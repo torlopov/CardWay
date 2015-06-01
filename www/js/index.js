@@ -164,11 +164,11 @@ jQuery(document).ready(function () {
 		
 		
 		
-        document.addEventListener("online", onOnline, false); //если пользователь online
+        document.addEventListener("online", onOnline, true); //если пользователь online
         function onOnline() {
             XLM_update(); // то обновляем данные из XML
         };
-        document.addEventListener("offline", offOnline, false); // если пользователь не подключен к Интернет, то сообщаем об этом
+        document.addEventListener("offline", offOnline, true); // если пользователь не подключен к Интернет, то сообщаем об этом
         function offOnline() {
             alert("Для нормальной работы приложения необходим доступ в сеть Интернет", "Нет доступа к сети Интернет");
         };
@@ -1238,11 +1238,11 @@ $("*").on("focusout", ".input_stop_click", function () {
 /* ОБРАБОТЧИК НАЖАТИЯ КНОПКИ BACK */
         document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() {
-                document.addEventListener("backbutton", onBackKeyDown, false); // создаем обработчик события для кнопки back
+                document.addEventListener("backbutton", onBackKeyDown, true); // создаем обработчик события для кнопки back
         }
         function onBackKeyDown() { //описываем что происходит после нажатия кнопки back 
-            alert("Было нажатие. Массив:  ");
-                /*if (zalivka_on === true){
+            //alert("Было нажатие. Массив:  ");
+                if (zalivka_on === true){
                         close_all_modals();
                 }
                 else {
@@ -1281,7 +1281,7 @@ $("*").on("focusout", ".input_stop_click", function () {
                                                                         resto_page ();
                                                                         break;
                         }
-                }*/
+                }
         }
 /* конец - ОБРАБОТЧИК НАЖАТИЯ КНОПКИ BACK */
 
