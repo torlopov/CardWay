@@ -105,7 +105,6 @@ C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\i
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\img\feature\veranda.png \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\img\feature\vip.png \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\img\feature\wi_fi.png \
-C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\js\Backbutton.js \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\js\Coordinates.js \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\js\cordova.js \
 C:\Users\PCMAN\Documents\NetBeansProjects\CardWay\platforms\android\assets\www\js\geolocation.js \

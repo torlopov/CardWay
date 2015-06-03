@@ -13,7 +13,6 @@
     </author>
     <gap:plugin name="com.jmi2.cordova.geolocation" version="0.3.15" />
     <gap:plugin name="com.aculocity.plugin.networkinterface" version="2.0.0" />
-    <gap:plugin name="com.badrit.backbutton" version="0.1.0" />
     <gap:plugin name="com.butterflyeffect.plugins" version="0.1.1" />
     <icon density="ldpi" platform="android" src="images/logo.png" />
     <icon density="mdpi" platform="android" src="images/logo.png" />
