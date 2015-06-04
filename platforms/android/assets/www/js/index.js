@@ -115,7 +115,7 @@ jQuery(document).ready(function () {
     /* Конец - Переменные для поиска и фильтров */
 
         var value = window.localStorage.getItem("tel");                     //берем из localStorage номер телефона
-        //var mas_back_but = new Array(0);                                    // Создаем массив куда будем записывать историю переходов по страницам
+        var mas_back_but = new Array(0);                                    // Создаем массив куда будем записывать историю переходов по страницам
 
         var avtorizaciya_active = false;
 
@@ -161,14 +161,14 @@ jQuery(document).ready(function () {
 			bin.send(''); // завершаем обработку файла
         };
         XLM_update();
-		
-		
-		
-        document.addEventListener("online", onOnline, true); //если пользователь online
-        function onOnline() {
+				
+        document.addEventListener("online", onOnline, false); //если пользователь online
+		document.addEventListener("offline", offOnline, false); // если пользователь не подключен к Интернет, то сообщаем об этом
+       		
+		function onOnline() {
             XLM_update(); // то обновляем данные из XML
         };
-        document.addEventListener("offline", offOnline, true); // если пользователь не подключен к Интернет, то сообщаем об этом
+        
         function offOnline() {
             alert("Для нормальной работы приложения необходим доступ в сеть Интернет", "Нет доступа к сети Интернет");
         };
@@ -337,7 +337,7 @@ $(".reg_fio_wr input").keyup( function(){
                // alert(scroll_str_vse_rest);
                 
                 content_vse_restorani_on = true;
-                //mas_back_but[mas_back_but.length] = "content_vse_restorani_on";
+                mas_back_but[mas_back_but.length] = "content_vse_restorani_on";
         };
         /*$(".content_vse_restorani").scroll( function(){
             scroll_str_vse_rest = $(".content_vse_restorani").scrollTop();
@@ -351,7 +351,7 @@ $(".reg_fio_wr input").keyup( function(){
                 $(".content_zabronirovat_stol").css({"display":"block"});
 				
                 content_zabronirovat_stol_on = true;
-                //mas_back_but[mas_back_but.length] = "content_zabronirovat_stol_on";
+                mas_back_but[mas_back_but.length] = "content_zabronirovat_stol_on";
 
                 if (full_of_empty == "full"){
                         //$(".banner_forma_broni_full_wr input").val($(".active_restoran .restoran_name span").text()); // Добавляем название ресторана в верхний баннер
@@ -376,7 +376,7 @@ $(".reg_fio_wr input").keyup( function(){
                 $(".content_filtr").css({"display":"block"});
                 
                 content_str_filtr_on = true;
-                //mas_back_but[mas_back_but.length] = "content_str_filtr_on";
+                mas_back_but[mas_back_but.length] = "content_str_filtr_on";
         }
 /* конец - ФУНКЦИЯ - ОТКРЫВАЕТ СТРАНИЦУ ПОИСКА / ФИЛЬТР  */
 
@@ -520,7 +520,7 @@ $(".reg_fio_wr input").keyup( function(){
 		$(".content_str_restorana").css({"display":"block"});           // включаем страницу ресторана
 
                 content_str_restorana_on = true;
-                //mas_back_but[mas_back_but.length] = "content_str_restorana_on";
+                mas_back_but[mas_back_but.length] = "content_str_restorana_on";
 
 		var dom_slider = $('<div id="sliderA" class="slider"></div>');  // Создаем переменную где позднее будет инициализироваться слайдер
 		dom_slider.appendTo( ".block_foto_restorana" );                 // После удалении тега вновь его добавляем, чтобы сладер мог заного проинициализиоваться
@@ -848,7 +848,7 @@ $(".reg_fio_wr input").keyup( function(){
 	function card_page (position_rest, flag){
 		$(".content_pokazat_na_karte").css({"display":"block"});
 		content_pokazat_na_karte_on = true;
-                //mas_back_but[mas_back_but.length] = "content_pokazat_na_karte_on";
+                mas_back_but[mas_back_but.length] = "content_pokazat_na_karte_on";
                 
         /* ГЕОЛОКАЦИЯ подгружается по требованию (после нажатия на соответствующем пункте меню) */
                 $.getScript("http://www.google.com/jsapi", function() { // вызываем скрипт с гугла при клике на меню
@@ -998,7 +998,7 @@ $(".reg_fio_wr input").keyup( function(){
             $(".banner_str_izbrannoe").css({"display":"block"});
             
             content_izbrannoe_on = true;
-            //mas_back_but[mas_back_but.length] = "content_izbrannoe_on";
+            mas_back_but[mas_back_but.length] = "content_izbrannoe_on";
             $(".restoran_wr").remove();
             /* показывает все избранные рестораны */
             if (value != "" && value != "undefined" && value != null) { 
@@ -1027,7 +1027,7 @@ $(".reg_fio_wr input").keyup( function(){
                 $(".content_moi_broni").css({"display":"block"});
                 
                 content_moi_broni_on = true;
-                //mas_back_but[mas_back_but.length] = "content_moi_broni_on";
+                mas_back_but[mas_back_but.length] = "content_moi_broni_on";
 
             /* отстраивает ранее совершенные брони */
                 if (value != "" && value != "undefined" && value != null) { //если пользователь зарегистрирован, то выводим его брони
@@ -1053,7 +1053,7 @@ $(".reg_fio_wr input").keyup( function(){
                     $('.content_str_reg').html(data);
 				});
                 content_moi_dannie_on = true;
-                //mas_back_but[mas_back_but.length] = "content_moi_dannie_on";
+                mas_back_but[mas_back_but.length] = "content_moi_dannie_on";
             };
             $(".content_str_reg").on("touchend", ".reg_submit_wr_new input", function(){ // После клика на кнопку подтвердить, перезаписываем данные пользователя
                     new_card("change");
@@ -1236,7 +1236,7 @@ $("*").on("focusout", ".input_stop_click", function () {
 /* конец - ПРАВИЛА ДЛЯ INPUT */
 
 /* ОБРАБОТЧИК НАЖАТИЯ КНОПКИ BACK */
-
+		
 
         /*document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() {
@@ -1590,10 +1590,10 @@ $("*").on("focusout", ".input_stop_click", function () {
 		request.error(function() {  alert("Бронь не принята по причине отсутсвия доступа в Интернет. Вы можете забронировать стол по телефону:  +7 (495) 722-00-23", "Нет доступа к сети Интернет"); });
 		request.success(function() { alert("Статус брони можно отследить на странице 'Мои брони'.", "Бронь принята"); });
 		if (booking_flag){
-			//mas_back_but.splice(mas_back_but.length-2,2);
+			mas_back_but.splice(mas_back_but.length-2,2);
 			resto_page ($(".active_restoran .all_restoran_id").text());
         } else {
-			//mas_back_but.splice(mas_back_but.length-2,2);
+			mas_back_but.splice(mas_back_but.length-2,2);
 			str_vse_rest_active ();
 			all_resto ();
 		}
